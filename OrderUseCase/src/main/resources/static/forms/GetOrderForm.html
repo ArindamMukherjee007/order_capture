@@ -1,0 +1,59 @@
+<!--
+You can use this form through Camunda Tasklist
+by setting the formKey of a BPMN User Task to:
+embedded:/forms/task-form.html
+-->
+
+<form name="taskForm" class="form-horizontal" role="form">
+
+  <!-- read-only field -->
+  <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">User Name</label>
+    <div class="col-sm-10">
+      <input type="text"
+             name="user name"
+             cam-variable-name="username"
+             cam-variable-type="String"
+             class="form-control" />      
+    </div>
+  </div>
+
+ <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">Product Name</label>
+    <div class="col-sm-10">
+      <input type="text"
+             name="product name1"
+             cam-variable-name="productname1"
+            cam-variable-type="String"
+             class="form-control" />      
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">Product Name</label>
+    <div class="col-sm-10">
+      <input type="text"
+             name="product name2"
+             cam-variable-name="productname2"
+            cam-variable-type="String"
+             class="form-control" />      
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="name" class="col-sm-2 control-label">Product Name</label>
+    <div class="col-sm-10">
+      <input type="text"
+             name="product name3"
+             cam-variable-name="productname3"
+             cam-variable-type="String"
+             class="form-control" />      
+    </div>
+  </div>
+  
+ 
+
+  <script cam-script type="text/form-script">
+  // custom JavaScript goes here
+  </script>
+</form>
