@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface EnventryDAO {
-	public void checkEnventry(String userName, List products); 
+	public List<String> checkEnventry(String userName, List products); 
 }

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_0xgbqke" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.7.0">
+  <decision id="CalcOffer" name="Calculate Discount">
+    <decisionTable id="DecisionTable_10xxsen" hitPolicy="COLLECT" aggregation="SUM">
+      <input id="Input_1" camunda:inputVariable="Product">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>Product</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" name="Offer" typeRef="integer" />
+      <rule id="DecisionRule_1i1ggd9">
+        <inputEntry id="UnaryTests_1ddz1il">
+          <text>"Washing Machine"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0e2w142">
+          <text>30</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_132s19g">
+        <inputEntry id="UnaryTests_0fojcds">
+          <text>"Mac Book"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00dwvlj">
+          <text>10</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0angls8">
+        <inputEntry id="UnaryTests_09rfa26">
+          <text>"TV"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0mopb5x">
+          <text>35</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1xs55wf">
+        <inputEntry id="UnaryTests_0cryhwh">
+          <text>"Fridge"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0evrymh">
+          <text>20</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1x8eizr">
+        <inputEntry id="UnaryTests_1m5j0j3">
+          <text>"Laptop"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0n6skg1">
+          <text>15</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0jhypxu">
+        <inputEntry id="UnaryTests_1q7exol">
+          <text>"TV","Fridge","Laptop"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0vmu6in">
+          <text>30</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="CalcOffer">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
