@@ -56,6 +56,22 @@
           <text>30</text>
         </outputEntry>
       </rule>
+      <rule id="DecisionRule_1a7s2ke">
+        <inputEntry id="UnaryTests_0lcnaox">
+          <text>"Table"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1n7q4dr">
+          <text>20</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1fri0jj">
+        <inputEntry id="UnaryTests_1umr3sl">
+          <text>"Chair"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ki67xz">
+          <text>35</text>
+        </outputEntry>
+      </rule>
     </decisionTable>
   </decision>
   <dmndi:DMNDI>

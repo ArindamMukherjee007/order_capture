@@ -15,7 +15,7 @@ public class OfferListner implements TaskListener{
 		DelegateExecution  exec=(DelegateExecution) delegateTask.getExecution();
 		ArrayList offer=(ArrayList) exec.getVariable("Offer");
 		System.out.println("Offer Details :"+offer.toString());
-		System.out.println(delegateTask.getVariable("Offer").toString());
+		//System.out.println(delegateTask.getVariable("Offer").toString());
 	}
 
 }
